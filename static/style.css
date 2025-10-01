@@ -1,0 +1,30 @@
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(180deg,#0b0f1a 0%, #152033 100%);
+  color: #e6eef8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  width: 480px;
+  padding: 20px 28px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+h1 { text-align: center; margin-bottom: 8px; }
+.controls { display:flex; gap:12px; justify-content:center; margin:16px 0; }
+button {
+  padding: 10px 14px;
+  border-radius:8px;
+  border: none;
+  background: #f2b84c;
+  color: #08101a;
+  cursor: pointer;
+  font-weight: 600;
+}
+.player { display:flex; gap:16px; justify-content:center; margin-bottom:10px; }
+.status { text-align:center; margin-bottom:12px; opacity:0.9; }
+.results { max-height:200px; overflow:auto; background: rgba(0,0,0,0.18); padding:10px; border-radius:8px; }

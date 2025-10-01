@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Blockspace Race — Ryaiku Demo</title>
+
+  <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Blockspace Race</h1>
+    <div class="info">
+      <div>Current block: <span id="block-num">0</span></div>
+      <div>Capacity: <span id="capacity">-</span></div>
+    </div>
+
+    <div class="controls">
+      <button id="submit-btn">Submit Now</button>
+      <button id="reserve-btn">Reserve (cost 2 tokens)</button>
+    </div>
+
+    <div class="player">
+      <div>Tokens: <span id="tokens">0</span></div>
+      <div>Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="results" class="results"></div>
+  </div>
+</body>
+</html>
